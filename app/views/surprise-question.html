@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <h1 class="heading-large">Where do you like to juggle?
+      </h1>
+
+      <form class="form" action="juggling-balls-answer" method="post">
+        <div class="form-group">
+          <fieldset>
+
+          <div class="multiple-choice">
+            <input id="time-juggling-1" name="time-juggling" type="checkbox" value="The circus">
+            <label for="time-juggling-1">The circus</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="time-juggling-2" name="time-juggling" type="checkbox" value="At home">
+            <label for="time-juggling-2">At home</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="time-juggling-3" name="time-juggling" type="checkbox" value="On public transport">
+            <label for="time-juggling-3">On public transport</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="time-juggling-4" name="time-juggling" type="checkbox" value="Anywhere and everywhere">
+            <label for="time-juggling-4">Anywhere and everywhere</label>
+          </div>
+
+        </fieldset>
+      </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

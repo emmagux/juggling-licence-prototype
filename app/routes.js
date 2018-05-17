@@ -14,7 +14,7 @@ var jugglingBalls = req.session.data['juggling-balls']
 // check whether the variable matches a condition
 if (jugglingBalls == "3 or more") {
   // send use to the next pages
-  res.redirect('/juggling-trick')
+  res.redirect('/check-your-answers')
 } else {
   // send user to ineligible page
   res.redirect('ineligible')
